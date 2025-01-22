@@ -1,0 +1,52 @@
+@use '../../styles/main.scss' as *;
+
+.featured-sidebar {
+  margin-top: 20px;
+  width: 300px;
+  flex-shrink: 0;
+  
+  &__title {
+    font-size: 20px ;
+    font-weight: 700 ;
+    margin-bottom: 24px ;
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  &__avatar {
+    width: 40px ;
+    height: 40px ;
+  }
+  
+  &__info {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  &__name {
+    font-weight: 500 ;
+    font-size: 14px ;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  &__author {
+    color: $gray-medium ;
+    font-size: 12px ;
+  }
+  
+  &__add {
+    color: $primary-color ;
+  }
+}

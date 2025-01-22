@@ -1,0 +1,112 @@
+@use '../styles/main' as *;
+
+.article-detail {
+  padding: 40px 0;
+  background-color: #fff;
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  &__publication {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  &__avatar {
+    width: 40px !important;
+    height: 40px !important;
+    border: 2px solid #ff4400 !important;
+  }
+  
+  &__publication-name {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #1a1a1a;
+  }
+  
+  &__date {
+    color: #666 !important;
+    font-size: 14px !important;
+  }
+  
+  &__title {
+    font-size: 44px;
+    font-weight: 600 !important;
+    margin-bottom: 24px !important;
+    line-height: 1.2 !important;
+    color: #1a1a1a;
+  }
+  
+  &__meta {
+    display: flex;
+    gap: 24px;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 32px;
+    align-items: center;
+
+    & > * {
+      position: relative;
+      
+      &:not(:last-child):after {
+        content: "•";
+        position: absolute;
+        right: -14px;
+        color: #ccc;
+      }
+    }
+  }
+  
+  &__image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  &__content {
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 40px !important;
+    white-space: pre-wrap !important;
+    color: #333;
+  }
+  
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+  }
+  
+  &__action {
+    color: #666 !important;
+    font-size: 14px !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    transition: all 0.2s ease !important;
+    
+    &:hover {
+      color: #ff4400 !important;
+    }
+    
+    span {
+      margin-left: 8px;
+      font-weight: 500;
+    }
+    
+    &--share {
+      margin-left: auto;
+    }
+  }
+}
