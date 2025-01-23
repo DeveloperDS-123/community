@@ -6,18 +6,15 @@ Community is a React-based application designed for creating and managing blogs 
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Available Scripts](#available-scripts)
 - [Dependencies](#dependencies)
 - [Dev Dependencies](#dev-dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
-## Getting Started
+
 
 ### Prerequisites
 
@@ -103,7 +100,6 @@ For the full list, check the `dependencies` section in `package.json`.
 - `eslint`: Code linting and formatting.
 - `postcss` & `autoprefixer`: CSS preprocessing tools.
 
--
 
 
 
